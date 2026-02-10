@@ -27,7 +27,7 @@
         -176,
         -272
       ],
-      "id": "d3e7b075-b0cd-43a4-aab9-226c35267b83",
+      "id": "d3e7b07",
       "name": "Schedule Trigger"
     },
     {
@@ -36,15 +36,15 @@
         "operation": "get",
         "owner": {
           "__rl": true,
-          "value": "Teja4sky",
+          "value": "keepyourname",
           "mode": "name"
         },
         "repository": {
           "__rl": true,
-          "value": "github-readme-auto-progress-tracker-n8n",
+          "value": "projectname",
           "mode": "name"
         },
-        "filePath": "README.md",
+        "filePath": "filename",
         "asBinaryProperty": false,
         "additionalParameters": {}
       },
@@ -54,12 +54,12 @@
         -160,
         64
       ],
-      "id": "e360e3da-1106-4eab-be7f-f597ed76f802",
+      "id": "e360e3ab-bef802",
       "name": "Get a file",
-      "webhookId": "10558dc4-2235-4057-bfc5-88f0870d7fdf",
+      "webhookId": "10558f0870d7fdf",
       "credentials": {
         "githubApi": {
-          "id": "Uyn2LqQeS8oaIPTn",
+          "id": "UyaIPTn",
           "name": "GitHub account"
         }
       }
@@ -68,13 +68,13 @@
       "parameters": {
         "jsCode": "// Get README content\nlet content = $input.first().json.content;\n\n// Decode Base64\ncontent = Buffer.from(content, 'base64').toString('utf8');\n\n// Add new progress line\nlet matches = content.match(/Day\\s+\\d+/g);\n\nlet day = matches ? Math.floor(matches.length / 3) + 1 : 1;\n\nlet timeLabels = [\"Morning\", \"Afternoon\", \"Night\"];\nlet countToday = matches ? matches.length % 3 : 0;\n\nlet label = timeLabels[countToday];\n\ncontent += `\\nDay ${day} – Done (${label})`;\n\nreturn [{\n  json: {\n    content: content,\n    message: `Progress update: Day ${day} (${label})`\n  }\n}];\n"
       },
-      "type": "n8n-nodes-base.code",
+      "type": "n8n-nodesde",
       "typeVersion": 2,
       "position": [
         112,
         -256
       ],
-      "id": "4faff8c3-6aac-467c-bc78-8d22e95970dc",
+      "id": "4faff8c3-6aac-4695970dc",
       "name": "Code in JavaScript"
     },
     {
@@ -88,7 +88,7 @@
         },
         "repository": {
           "__rl": true,
-          "value": "github-readme-auto-progress-tracker-n8n",
+          "value": rn8n",
           "mode": "name"
         },
         "filePath": "README.md",
@@ -101,9 +101,9 @@
         128,
         64
       ],
-      "id": "135f2229-0ad4-4b49-b075-f49cfc29b367",
+      "id": "129b367",
       "name": "Edit a file",
-      "webhookId": "d42f511e-2572-4820-9230-ffded0f51ba5",
+      "webhookId": "d42f511e-25751ba5",
       "credentials": {
         "githubApi": {
           "id": "Uyn2LqQeS8oaIPTn",
@@ -153,11 +153,11 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "4563e2d4-2227-4158-8609-db45d9f4cd51",
+  "versionId": "459-db45d9f4cd51",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "e6fbb277c0df551508765ba790306382d24ce3901b8643a7f2010fcc9cca720d"
+    "instanceId": "e6fbb277c0df53901b8643a7f2010fcc9cca720d"
   },
-  "id": "4fMnsYhw_mJgYSbhD8pBu",
+  "id": "4fMnsYhw_m8pBu",
   "tags": []
 }
