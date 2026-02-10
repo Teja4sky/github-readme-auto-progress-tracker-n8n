@@ -4,6 +4,9 @@ This project automatically updates the README file multiple times per day using 
 It demonstrates real-world automation using GitHub API, scheduled workflows, and DevOps practices.
 
 ---
+ <img width="803" height="657" alt="Photo" src="https://github.com/user-attachments/assets/0f04e07a-6ea7-46cc-9241-4cd73aa80d45" />
+
+---
 
 ## 📌 Features
 
