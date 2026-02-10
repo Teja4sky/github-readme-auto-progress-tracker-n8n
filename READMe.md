@@ -80,9 +80,6 @@ Day 1 – Done (Night)
 Active and running autonomously via n8n.
 
 
-
-## ⚙️ Workflow Architecture
-
 ## ⚙️ Workflow Architecture
 
 ```
