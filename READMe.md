@@ -83,3 +83,30 @@ Active and running autonomously via n8n.
 
 ## ⚙️ Workflow Architecture
 
+┌──────────────────┐
+│ Schedule Trigger │
+│  (3 times/day)   │
+└─────────┬────────┘
+          │
+          ▼
+┌──────────────────┐
+│  GitHub Node     │
+│   Get README.md  │
+└─────────┬────────┘
+          │
+          ▼
+┌──────────────────┐
+│ JavaScript Node  │
+│ Process content  │
+│ Add progress log │
+└─────────┬────────┘
+          │
+          ▼
+┌──────────────────┐
+│  GitHub Node     │
+│  Update README   │
+│  Commit changes  │
+└──────────────────┘
+
+Scheduler → Read File → Process → Update File → GitHub Commit
+
